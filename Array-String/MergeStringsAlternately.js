@@ -17,4 +17,6 @@ const mergeStringsAlternately = function(word1, word2) {
     return result;
 };
 
+console.log(mergeStringsAlternately("abc", "pqr"));
 console.log(mergeStringsAlternately("ab", "pqrs"));
+console.log(mergeStringsAlternately("abcd", "pq"));
