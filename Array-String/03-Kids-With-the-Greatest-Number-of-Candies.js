@@ -4,13 +4,11 @@
  * @return {boolean[]}
  */
 const kidsWithCandies = function(candies, extraCandies) {
-    const result = new Array(candies.length);
+    const result = Array(candies.length).fill(false);
     const greatest = Math.max(...candies);
     for (let i = 0; i < candies.length; i++) {
         if (candies.at(i) + extraCandies >= greatest) {
             result[i] = true;
-        } else {
-            result[i] = false;
         }
     }
     return result;
